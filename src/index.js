@@ -4,10 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// boootstrap CDN link
+import 'bootstrap/dist/css/bootstrap.min.css';
+// routers
+import { BrowserRouter } from 'react-router-dom'
+// store
+import { Provider } from 'react-redux';
+import { store } from './store/store'
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store} >
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
 
