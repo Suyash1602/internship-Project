@@ -5,6 +5,9 @@ import { userLoginLifeCycle } from '../store/userLoginSlice';
 import { useNavigate } from 'react-router-dom'
 import Alert from 'react-bootstrap/Alert'
 
+// react icons
+import { FaSignInAlt } from "react-icons/fa";
+
 function SignIn() {
 
     let dispatch = useDispatch();
@@ -68,7 +71,7 @@ function SignIn() {
 
                                 {/* submit button */}
                                 <div className='container text-center'>
-                                    <button type='submit' className='btn btn-success  text-center'>Sign In</button>
+                                    <button type='submit' className='btn btn-success  text-center'>Sign In <FaSignInAlt /> </button>
                                 </div>
                             </form>
                         </div>

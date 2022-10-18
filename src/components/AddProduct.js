@@ -4,6 +4,9 @@ import { useForm } from 'react-hook-form';
 import Alert from 'react-bootstrap/Alert'
 import { useNavigate } from "react-router-dom";
 
+import { HiOutlineViewGridAdd } from "react-icons/hi";
+
+
 function AddProduct() {
     let { register, handleSubmit, formState: { errors } } = useForm()
 
@@ -82,7 +85,7 @@ function AddProduct() {
 
                                 {/* submit button */}
                                 <div className='container text-center'>
-                                    <button type='submit' className='btn btn-success my-4 text-center'>Add Product </button>
+                                    <button type='submit' className='btn btn-success my-4 text-center'>Add Product <HiOutlineViewGridAdd /> </button>
                                 </div>
                             </form>
                         </div>

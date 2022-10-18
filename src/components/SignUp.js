@@ -4,6 +4,9 @@ import { useForm } from 'react-hook-form';
 import { useNavigate } from "react-router-dom";
 import Alert from 'react-bootstrap/Alert'
 
+// react icons
+import { MdPersonAddAlt } from "react-icons/md";
+
 function SignIn() {
     let [errMsg, setErrMsg] = useState("")
     let { register, handleSubmit, formState: { errors } } = useForm()
@@ -99,7 +102,7 @@ function SignIn() {
 
                                 {/* submit button */}
                                 <div className='container text-center'>
-                                    <button type='submit' className='btn btn-success my-4 text-center'>Sign Up</button>
+                                    <button type='submit' className='btn btn-success my-4 text-center'>Sign Up <MdPersonAddAlt /> </button>
                                 </div>
                             </form>
                         </div>

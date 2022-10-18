@@ -10,7 +10,8 @@ import { clearState } from './store/userLoginSlice';
 // importing components
 import { Home, AboutUs, SignIn, SignUp, ProductList, AddProduct, Invalid } from './components/AllComponents'
 
-
+// icon
+import { FaSignOutAlt } from "react-icons/fa";
 
 function App() {
   const backgroundImg = "http://mdbootstrap.com/img/Photos/Others/images/91.jpg"
@@ -68,7 +69,7 @@ function App() {
 
                   <NavDropdown className='fw-bold' title={userObj.username} menuVariant="dark">
                     <NavDropdown.Item >
-                      <NavLink onClick={userLogOut} className="nav-link " aria-current="page" to="/signin" >Sign Out</NavLink>
+                      <NavLink onClick={userLogOut} className="nav-link " aria-current="page" to="/signin" >Sign Out <FaSignOutAlt /> </NavLink>
                     </NavDropdown.Item>
                   </NavDropdown>
                 </> : <>
